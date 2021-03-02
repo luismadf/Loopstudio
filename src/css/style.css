@@ -17,6 +17,7 @@
 }
 
 body {
+  position: relative;
   font-size: var(--font-size);
   font-family: var(--font-alata);
 }
@@ -25,6 +26,24 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.overlay-body {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.active {
+  display: flex !important;
+}
+
+.active-over {
+  z-index: 2;
 }
 
 /* HEADER */
@@ -52,6 +71,15 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.button-menu {
+  display: none;
+}
+
+.button-close {
+  display: none;
+  width: 25px;
 }
 
 header nav ul {

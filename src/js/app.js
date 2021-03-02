@@ -1,4 +1,9 @@
 const creationsOption = document.querySelector("#creations-options");
+const buttonMenu = document.querySelector(".button-menu");
+const overlay = document.querySelector(".overlay-body");
+const menu = document.querySelector("#menu");
+const logo = document.querySelector(".logo");
+const close = document.querySelector(".button-close");
 
 const db = [
   {
@@ -47,4 +52,18 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     creationsOption.appendChild(div);
   });
+});
+
+buttonMenu.addEventListener("click", () => {
+  overlay.classList.add("active");
+  menu.classList.add("active");
+  logo.classList.add("active-over");
+  close.classList.add("active", "active-over");
+});
+
+close.addEventListener("click", () => {
+  overlay.classList.remove("active");
+  menu.classList.remove("active");
+  logo.classList.remove("active-over");
+  close.classList.remove("active", "active-over");
 });
