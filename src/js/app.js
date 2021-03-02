@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const div = document.createElement("div");
     div.classList.add("option");
     div.innerHTML = `
-    <img src="./src/img/desktop/${option.img}" alt="" />
+    <img src="./src/img/desktop/${option.img}" alt="post" />
     <div class="overlay-option">
       <h3>${option.title}</h3>
     </ div>

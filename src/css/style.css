@@ -46,6 +46,23 @@ body {
   z-index: 2;
 }
 
+a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  margin-top: 8px;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+ul li {
+  padding-left: 40px;
+}
+
 /* HEADER */
 
 header {
@@ -89,7 +106,6 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  margin-left: 40px;
   color: var(--color-white);
 }
 
@@ -102,6 +118,9 @@ header .hero {
   text-transform: uppercase;
   color: var(--color-white);
   font-size: 2rem;
+}
+
+header .hero h1 {
   font-weight: 300;
 }
 
@@ -285,7 +304,6 @@ footer .container {
 .social li a {
   text-decoration: none;
   color: white;
-  margin-left: 20px;
   font-size: 1.8rem;
 }
 
@@ -293,6 +311,11 @@ footer .container {
   grid-area: links;
   display: flex;
   list-style: none;
+}
+
+.links li {
+  padding-left: 0px;
+  padding-right: 40px;
 }
 
 .links li a {
