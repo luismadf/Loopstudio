@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap");
 :root {
   --color-white: hsl(0, 0%, 100%);
   --color-black: hsl(0, 0%, 0%);
@@ -74,6 +74,7 @@ header .hero {
   text-transform: uppercase;
   color: var(--color-white);
   font-size: 2rem;
+  font-weight: 300;
 }
 
 /* HEADER */
@@ -110,6 +111,7 @@ header .hero {
   text-transform: uppercase;
   font-size: 2.5rem;
   width: 100%;
+  font-weight: 300;
   margin-bottom: 30px;
 }
 
@@ -134,6 +136,7 @@ header .hero {
   font-family: var(--font-josefin);
   text-transform: uppercase;
   font-size: 2.5rem;
+  font-weight: 300;
   grid-area: title;
 }
 
@@ -144,15 +147,16 @@ header .hero {
   font-family: var(--font-josefin);
   font-size: 1rem;
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: white;
   border: 1px solid var(--color-black);
-  width: 140px;
+  width: 160px;
   height: 40px;
   cursor: pointer;
   font-weight: bold;
   grid-area: button;
   justify-self: end;
+  letter-spacing: 3px;
 }
 
 .section-creations .button:hover {
@@ -190,12 +194,20 @@ header .hero {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.4) 20%,
+    rgba(0, 0, 0, 0.19371498599439774) 30%,
+    rgba(0, 0, 0, 0) 40%
+  );
 }
 
 .section-creations .creations-options .option img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .section-creations .creations-options .option h3 {
@@ -207,7 +219,7 @@ header .hero {
   left: 20px;
   font-size: 2rem;
   width: 200px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 /* SECTION-CREATIONS */
