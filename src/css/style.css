@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 header .overlay-header {
@@ -87,7 +87,6 @@ header .overlay-header {
 header nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .button-menu {
@@ -101,7 +100,13 @@ header nav {
 
 header nav ul {
   display: flex;
+  align-items: flex-end;
   list-style: none;
+  height: auto;
+}
+
+header nav ul li {
+  height: auto;
 }
 
 header nav ul li a {
@@ -111,13 +116,13 @@ header nav ul li a {
 
 header .hero {
   margin: 100px 0 60px 0;
-  width: 50%;
+  width: 60%;
   border: 1px solid var(--color-white);
   padding: 40px;
   font-family: var(--font-josefin);
   text-transform: uppercase;
   color: var(--color-white);
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 header .hero h1 {
